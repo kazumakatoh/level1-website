@@ -1,395 +1,390 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="株式会社LEVEL1 — 輸入事業・プライベートブランド・クラウドファンディング支援事業" />
-  <meta property="og:title" content="株式会社LEVEL1" />
-  <meta property="og:description" content="輸入事業・プライベートブランド・クラウドファンディング支援事業" />
-  <meta property="og:type" content="website" />
-  <title>株式会社LEVEL1</title>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="株式会社LEVEL1 — 輸入事業・プライベートブランド・クラウドファンディング支援事業。新たな価値を、世界から日本へ。" />
+  <title>株式会社LEVEL1 | 新たな価値を、世界から日本へ。</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- ========== NAVIGATION ========== -->
-  <header class="site-header" id="site-header">
-    <nav class="nav-container">
-      <a href="#hero" class="nav-logo">
-        <span class="logo-level">LEVEL</span><span class="logo-one">1</span>
-      </a>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#about" class="nav-link">会社について</a></li>
-        <li><a href="#business" class="nav-link">事業内容</a></li>
-        <li><a href="#brands" class="nav-link">ブランド</a></li>
-        <li><a href="#crowdfunding" class="nav-link">CF支援</a></li>
-        <li><a href="#contact" class="nav-link nav-link--cta">お問い合わせ</a></li>
-      </ul>
-      <button class="nav-hamburger" id="nav-hamburger" aria-label="メニュー">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-  </header>
-
-  <div class="mobile-menu" id="mobile-menu">
-    <ul class="mobile-nav-links">
-      <li><a href="#about" class="mobile-nav-link">会社について</a></li>
-      <li><a href="#business" class="mobile-nav-link">事業内容</a></li>
-      <li><a href="#brands" class="mobile-nav-link">ブランド</a></li>
-      <li><a href="#crowdfunding" class="mobile-nav-link">CF支援</a></li>
-      <li><a href="#contact" class="mobile-nav-link">お問い合わせ</a></li>
+<!-- NAV -->
+<header class="site-header" id="site-header">
+  <nav class="nav-container">
+    <a href="index.html" class="nav-logo"><span class="logo-level">LEVEL</span><span class="logo-one">1</span></a>
+    <ul class="nav-links">
+      <li class="nav-item"><a href="about.html" class="nav-link">会社について</a></li>
+      <li class="nav-item" style="position:relative">
+        <a href="#" class="nav-link">事業内容 <span class="nav-arrow">▾</span></a>
+        <ul class="nav-dropdown">
+          <li><a href="import.html">輸入事業</a></li>
+          <li><a href="crowdfunding.html">CF支援事業</a></li>
+        </ul>
+      </li>
+      <li class="nav-item" style="position:relative">
+        <a href="#" class="nav-link">ブランド <span class="nav-arrow">▾</span></a>
+        <ul class="nav-dropdown">
+          <li><a href="anibo.html">Anibo（防災）</a></li>
+          <li><a href="yadorigi.html">YADORIGI（銘木ウイスキー）</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="contact.html" class="nav-link nav-link--cta">お問い合わせ</a></li>
     </ul>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="メニュー"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+<div class="mobile-menu" id="mobile-menu">
+  <ul class="mobile-nav-links">
+    <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">会社について</a></li>
+    <li class="mobile-nav-item">
+      <div class="mobile-nav-sub">
+        <a href="import.html">輸入事業</a><a href="crowdfunding.html">CF支援</a>
+      </div>
+    </li>
+    <li class="mobile-nav-item">
+      <div class="mobile-nav-sub">
+        <a href="anibo.html">Anibo</a><a href="yadorigi.html">YADORIGI</a>
+      </div>
+    </li>
+    <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">お問い合わせ</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg"><div class="hero-grain"></div><div class="hero-gradient"></div></div>
+  <div class="hero-particles" id="hero-particles"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow animate-fade-up">LEVEL1 Co., Ltd.</p>
+    <h1 class="hero-title animate-fade-up delay-1">
+      <span class="hero-title-line">新たな価値を、</span>
+      <span class="hero-title-line">世界から日本へ。</span>
+    </h1>
+    <p class="hero-subtitle animate-fade-up delay-2">
+      輸入事業・プライベートブランド・クラウドファンディング支援を通じて<br />
+      独自の価値を創造し、社会に新しい体験を届けます。
+    </p>
+    <div class="hero-cta animate-fade-up delay-3">
+      <a href="about.html" class="btn btn--primary">会社について</a>
+      <a href="contact.html" class="btn btn--outline">お問い合わせ</a>
+    </div>
   </div>
+  <div class="hero-scroll-indicator"><span>SCROLL</span><div class="scroll-line"></div></div>
+</section>
 
-  <!-- ========== HERO ========== -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <div class="hero-grain"></div>
-      <div class="hero-gradient"></div>
-      <div class="hero-particles" id="hero-particles"></div>
-    </div>
-    <div class="hero-content">
-      <p class="hero-eyebrow animate-fade-up">LEVEL1 Co., Ltd.</p>
-      <h1 class="hero-title animate-fade-up delay-1">
-        <span class="hero-title-line">新たな価値を、</span>
-        <span class="hero-title-line">世界から日本へ。</span>
-      </h1>
-      <p class="hero-subtitle animate-fade-up delay-2">
-        輸入事業・プライベートブランド・クラウドファンディング支援を通じて<br />
-        独自の価値を創造し、社会に新しい体験を届けます。
+<!-- MISSION -->
+<section class="section" style="padding-block: 80px; background: var(--clr-bg);">
+  <div class="container">
+    <div style="max-width:760px;margin-inline:auto;text-align:center;" class="reveal">
+      <p style="font-family:'Cormorant Garamond',serif;font-size:0.8rem;letter-spacing:0.35em;color:var(--clr-gold);text-transform:uppercase;margin-bottom:20px;">Our Mission</p>
+      <p style="font-family:'Noto Serif JP',serif;font-size:clamp(1.3rem,3vw,2rem);font-weight:600;color:#fff;line-height:1.6;margin-bottom:24px;">
+        「ゼロからイチへ」—<br />誰も気づいていない価値を発見し、<br />世界と日本をつなぐ橋になる。
       </p>
-      <div class="hero-cta animate-fade-up delay-3">
-        <a href="#business" class="btn btn--primary">事業内容を見る</a>
-        <a href="#contact" class="btn btn--outline">お問い合わせ</a>
+      <p style="font-size:0.93rem;color:var(--clr-text-muted);line-height:1.9;">
+        私たちは単に製品を売るのではなく、文化・体験・思想を届けます。<br />
+        海外の優れたブランドを日本に紹介し、日本の伝統と革新から生まれた自社ブランドを世界へ発信する。<br />
+        そのサイクルの中に、次の時代を切り拓くビジネスの芽があると信じています。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section class="section section--dark" style="padding-block:80px;">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;" class="result-grid">
+      <div class="result-card reveal">
+        <div class="result-card__num"><span data-target="3">0</span></div>
+        <div class="result-card__label">展開事業領域</div>
+      </div>
+      <div class="result-card reveal delay-1">
+        <div class="result-card__num"><span data-target="2">0</span></div>
+        <div class="result-card__label">自社ブランド</div>
+      </div>
+      <div class="result-card reveal delay-2">
+        <div class="result-card__num"><span data-target="100" data-suffix="+">0</span></div>
+        <div class="result-card__label">取扱商品数</div>
+      </div>
+      <div class="result-card reveal delay-3">
+        <div class="result-card__num"><span data-target="98" data-suffix="%">0</span></div>
+        <div class="result-card__label">顧客継続率</div>
       </div>
     </div>
-    <div class="hero-scroll-indicator">
-      <span>SCROLL</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ========== ABOUT ========== -->
-  <section class="about section" id="about">
-    <div class="container">
-      <div class="section-header reveal">
-        <p class="section-label">ABOUT US</p>
-        <h2 class="section-title">私たちについて</h2>
+<!-- BUSINESS -->
+<section class="section" id="business">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">BUSINESS</p>
+      <h2 class="section-title">3つの事業領域</h2>
+      <p class="section-desc">それぞれの事業が連携し、より大きな価値を生み出すエコシステムを構築しています。</p>
+    </div>
+    <div class="business-grid">
+      <div class="business-card">
+        <div class="business-card__number">01</div>
+        <div class="business-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="business-card__title">輸入事業</h3>
+        <span class="business-card__subtitle">Exclusive Import Agency</span>
+        <p class="business-card__body">海外の優良ブランドと独占販売代理店契約を締結し、日本市場への参入を一貫サポート。市場調査・物流・販路開拓・マーケティングまで包括的に対応します。</p>
+        <a href="import.html" class="business-card__link">詳しく見る →</a>
       </div>
-      <div class="about-grid">
-        <div class="about-image reveal">
-          <div class="image-placeholder image-placeholder--tall">
-            <div class="placeholder-inner">
-              <span class="placeholder-icon">🏢</span>
-              <span class="placeholder-text">Company Image</span>
-            </div>
-          </div>
-          <div class="about-image-accent"></div>
+      <div class="business-card">
+        <div class="business-card__number">02</div>
+        <div class="business-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.09 6.26H21l-5.47 3.97 2.09 6.26L12 14.52l-5.62 4.07 2.09-6.26L3 8.26h6.91L12 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
         </div>
-        <div class="about-text reveal delay-1">
-          <h3 class="about-heading">「ゼロからイチへ」<br />を体現する企業</h3>
-          <p class="about-body">
-            株式会社LEVEL1は、独自の視点で世界の優れた製品・文化・価値を日本へ届けるとともに、
-            自社ブランドの開発・育成を通じて、新しいライフスタイルを提案します。
-          </p>
-          <p class="about-body">
-            防災という社会課題へのアプローチから、日本の銘木文化とウイスキー熟成の融合まで。
-            時代を先読みした事業展開で、常に業界の一歩先を行きます。
-          </p>
-          <div class="about-stats">
-            <div class="stat-item">
-              <span class="stat-number" data-target="3">0</span>
-              <span class="stat-label">事業領域</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number" data-target="2">0</span>
-              <span class="stat-label">自社ブランド</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number" data-target="100" data-suffix="+">0</span>
-              <span class="stat-label">取扱商品数</span>
-            </div>
-          </div>
+        <h3 class="business-card__title">プライベートブランド</h3>
+        <span class="business-card__subtitle">Anibo &amp; YADORIGI</span>
+        <p class="business-card__body">防災ブランド「Anibo」と日本産銘木×ウイスキー熟成ブランド「YADORIGI」の2ブランドを展開。社会課題と文化的価値に着目した独自の市場を開拓します。</p>
+        <a href="anibo.html" class="business-card__link">ブランドを見る →</a>
+      </div>
+      <div class="business-card">
+        <div class="business-card__number">03</div>
+        <div class="business-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 17v-3M7 17V9M11 17V5M15 17v-5M19 17v-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </div>
+        <h3 class="business-card__title">クラウドファンディング<br />支援事業</h3>
+        <span class="business-card__subtitle">CF Support</span>
+        <p class="business-card__body">企画立案からページ制作・PR・プロジェクト管理まで、クラウドファンディング成功に向けた包括的サポートを提供。新商品・サービスの市場投入を加速します。</p>
+        <a href="crowdfunding.html" class="business-card__link">詳しく見る →</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ========== BUSINESS ========== -->
-  <section class="business section section--dark" id="business">
-    <div class="container">
-      <div class="section-header reveal">
-        <p class="section-label">BUSINESS</p>
-        <h2 class="section-title section-title--light">事業内容</h2>
-      </div>
-      <div class="business-grid">
-
-        <div class="business-card reveal">
-          <div class="business-card__number">01</div>
-          <div class="business-card__icon">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-              <path d="M5 10h30M5 20h20M5 30h25M33 15l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <h3 class="business-card__title">輸入事業</h3>
-          <p class="business-card__subtitle">独占販売代理店</p>
-          <p class="business-card__body">
-            海外優良ブランドの独占販売代理店として、日本市場への参入をフルサポート。
-            市場調査から販路開拓・マーケティングまで一貫してサポートし、
-            ブランドの価値を最大化します。
-          </p>
-          <div class="business-card__tag">IMPORT</div>
-        </div>
-
-        <div class="business-card reveal delay-1">
-          <div class="business-card__number">02</div>
-          <div class="business-card__icon">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-              <path d="M20 5L25 15H35L27 21L30 32L20 26L10 32L13 21L5 15H15L20 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <h3 class="business-card__title">プライベートブランド</h3>
-          <p class="business-card__subtitle">Anibo &amp; YADORIGI</p>
-          <p class="business-card__body">
-            社会課題と文化的価値に着目した自社ブランドを展開。
-            防災ブランド「Anibo」と日本産銘木×ウイスキー熟成ブランド「YADORIGI」の
-            2ブランドで独自市場を開拓します。
-          </p>
-          <div class="business-card__tag">PRIVATE BRAND</div>
-        </div>
-
-        <div class="business-card reveal delay-2">
-          <div class="business-card__number">03</div>
-          <div class="business-card__icon">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-              <path d="M8 30V20M16 30V12M24 30V18M32 30V8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <path d="M5 35h30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3 class="business-card__title">クラウドファンディング<br />支援事業</h3>
-          <p class="business-card__subtitle">CF Support</p>
-          <p class="business-card__body">
-            新商品・サービスの市場投入をクラウドファンディングで加速。
-            企画立案からページ制作・PR・プロジェクト管理まで、
-            成功に向けた包括的なサポートを提供します。
-          </p>
-          <div class="business-card__tag">CF SUPPORT</div>
-        </div>
-
-      </div>
+<!-- BRANDS SHOWCASE -->
+<section class="section section--dark" id="brands">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">OUR BRANDS</p>
+      <h2 class="section-title">自社ブランド</h2>
     </div>
-  </section>
-
-  <!-- ========== BRANDS ========== -->
-  <section class="brands section" id="brands">
-    <div class="container">
-      <div class="section-header reveal">
-        <p class="section-label">OUR BRANDS</p>
-        <h2 class="section-title">自社ブランド</h2>
-      </div>
-
-      <!-- Anibo -->
-      <div class="brand-feature brand-feature--anibo reveal">
-        <div class="brand-feature__content">
-          <div class="brand-feature__label">BRAND 01</div>
-          <div class="brand-feature__logo">
-            <span class="brand-logo-text anibo-logo">Anibo</span>
-          </div>
-          <h3 class="brand-feature__title">いつもの暮らしに、<br />備えをプラスする。</h3>
-          <p class="brand-feature__body">
-            Aniboは「安心」と「備え」を日常に溶け込ませる防災ブランドです。
-            「防災は特別なことではない」という思想のもと、
-            デザイン性と機能性を両立した製品を開発・提供します。
-          </p>
-          <ul class="brand-feature__tags">
-            <li>防災グッズ</li>
-            <li>非常食</li>
-            <li>緊急キット</li>
-            <li>防災教育</li>
-          </ul>
-        </div>
-        <div class="brand-feature__visual">
-          <div class="image-placeholder image-placeholder--brand">
-            <div class="placeholder-inner">
-              <span class="placeholder-icon">🛡️</span>
-              <span class="placeholder-text">Anibo Brand Image</span>
-            </div>
-          </div>
-          <div class="brand-accent brand-accent--anibo"></div>
-        </div>
-      </div>
-
-      <div class="brand-divider"></div>
-
-      <!-- YADORIGI -->
-      <div class="brand-feature brand-feature--yadorigi brand-feature--reverse reveal">
-        <div class="brand-feature__content">
-          <div class="brand-feature__label">BRAND 02</div>
-          <div class="brand-feature__logo">
-            <span class="brand-logo-text yadorigi-logo">YADORIGI</span>
-          </div>
-          <h3 class="brand-feature__title">日本の森が、<br />ウイスキーを育てる。</h3>
-          <p class="brand-feature__body">
-            YADORIGIは、日本各地の銘木を樽材に使用したウイスキー熟成ブランドです。
-            ミズナラ・桜・梅など日本固有の木材がもたらす独自のフレーバーを通じて、
-            日本の自然と職人の技を世界へ発信します。
-          </p>
-          <ul class="brand-feature__tags">
-            <li>日本産銘木樽</li>
-            <li>ウイスキー熟成</li>
-            <li>クラフト蒸留</li>
-            <li>ギフト・コレクション</li>
-          </ul>
-        </div>
-        <div class="brand-feature__visual">
-          <div class="image-placeholder image-placeholder--brand">
-            <div class="placeholder-inner">
-              <span class="placeholder-icon">🥃</span>
-              <span class="placeholder-text">YADORIGI Brand Image</span>
-            </div>
-          </div>
-          <div class="brand-accent brand-accent--yadorigi"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== CROWDFUNDING ========== -->
-  <section class="crowdfunding section section--dark" id="crowdfunding">
-    <div class="container">
-      <div class="section-header reveal">
-        <p class="section-label">CF SUPPORT</p>
-        <h2 class="section-title section-title--light">クラウドファンディング支援</h2>
-        <p class="section-desc section-desc--light">
-          アイデアを持つすべての人・企業を、資金調達の成功へと導きます。
+    <div class="brand-feature reveal">
+      <div class="brand-feature__content">
+        <div class="brand-feature__label">BRAND 01 — DISASTER PREVENTION</div>
+        <div class="brand-feature__logo"><span class="brand-logo-text anibo-logo">Anibo</span></div>
+        <h3 class="brand-feature__title">いつもの暮らしに、<br />備えをプラスする。</h3>
+        <p class="brand-feature__body">
+          Aniboは「安心」と「備え」を日常に溶け込ませる防災ブランドです。
+          「防災は特別なことではない」という思想のもと、
+          デザイン性と機能性を両立した製品を開発。
+          いざというときに頼れる、毎日持ちたくなる防災グッズを提供します。
         </p>
+        <ul class="brand-feature__tags">
+          <li>防災グッズ</li><li>非常食</li><li>緊急キット</li><li>防災教育</li>
+        </ul>
+        <a href="anibo.html" class="btn btn--outline btn--sm">Aniboを見る</a>
       </div>
-
-      <div class="cf-flow reveal">
-        <div class="cf-step">
-          <div class="cf-step__num">01</div>
-          <div class="cf-step__icon">💡</div>
-          <h4 class="cf-step__title">企画・戦略立案</h4>
-          <p class="cf-step__body">プロジェクトの強みを分析し、ターゲット層と訴求ポイントを明確化します。</p>
+      <div class="brand-feature__visual">
+        <div class="visual-frame visual-frame--anibo" style="padding:48px;min-height:320px;display:flex;align-items:center;justify-content:center;">
+          <svg viewBox="0 0 300 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:300px;">
+            <defs>
+              <radialGradient id="ag1" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#3a8fa3" stop-opacity="0.3"/><stop offset="100%" stop-color="#0d2530" stop-opacity="0"/></radialGradient>
+            </defs>
+            <ellipse cx="150" cy="130" rx="140" ry="120" fill="url(#ag1)"/>
+            <!-- Shield -->
+            <path d="M150 30 L220 60 L220 140 Q220 200 150 230 Q80 200 80 140 L80 60 Z" fill="rgba(58,143,163,0.12)" stroke="#3a8fa3" stroke-width="1.5" stroke-linejoin="round"/>
+            <!-- House inside shield -->
+            <path d="M150 95 L115 120 L115 165 L185 165 L185 120 Z" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M107 122 L150 88 L193 122" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="138" y="142" width="24" height="23" rx="2" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+            <!-- Check mark -->
+            <path d="M130 135 L144 149 L172 121" fill="none" stroke="#3a8fa3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Outer rings -->
+            <circle cx="150" cy="130" r="95" fill="none" stroke="rgba(58,143,163,0.15)" stroke-width="1" stroke-dasharray="4 6"/>
+            <circle cx="150" cy="130" r="115" fill="none" stroke="rgba(58,143,163,0.08)" stroke-width="1" stroke-dasharray="3 8"/>
+            <!-- Dots -->
+            <circle cx="55" cy="80" r="2" fill="#3a8fa3" opacity="0.5"/><circle cx="245" cy="90" r="2" fill="#3a8fa3" opacity="0.5"/>
+            <circle cx="60" cy="180" r="1.5" fill="#3a8fa3" opacity="0.4"/><circle cx="240" cy="170" r="1.5" fill="#3a8fa3" opacity="0.4"/>
+          </svg>
         </div>
-        <div class="cf-arrow">→</div>
-        <div class="cf-step">
-          <div class="cf-step__num">02</div>
-          <div class="cf-step__icon">📝</div>
-          <h4 class="cf-step__title">ページ制作・撮影</h4>
-          <p class="cf-step__body">支援者の心を動かすコピーライティングと高品質なビジュアル制作を担当します。</p>
-        </div>
-        <div class="cf-arrow">→</div>
-        <div class="cf-step">
-          <div class="cf-step__num">03</div>
-          <div class="cf-step__icon">📣</div>
-          <h4 class="cf-step__title">PR・プロモーション</h4>
-          <p class="cf-step__body">SNS・メディア・インフルエンサーを活用した多角的なプロモーションを展開します。</p>
-        </div>
-        <div class="cf-arrow">→</div>
-        <div class="cf-step">
-          <div class="cf-step__num">04</div>
-          <div class="cf-step__icon">🎯</div>
-          <h4 class="cf-step__title">管理・サポート</h4>
-          <p class="cf-step__body">プロジェクト期間中の支援者対応・進捗管理・リターン発送までフォローします。</p>
-        </div>
-      </div>
-
-      <div class="cf-cta reveal delay-2">
-        <p class="cf-cta__text">クラウドファンディングのご相談は、お気軽にどうぞ。</p>
-        <a href="#contact" class="btn btn--gold">無料相談はこちら</a>
+        <div class="brand-accent brand-accent--anibo"></div>
       </div>
     </div>
-  </section>
 
-  <!-- ========== CONTACT ========== -->
-  <section class="contact section" id="contact">
-    <div class="contact-bg"></div>
-    <div class="container">
-      <div class="contact-inner reveal">
-        <div class="section-header">
-          <p class="section-label">CONTACT</p>
-          <h2 class="section-title">お問い合わせ</h2>
-          <p class="section-desc">
-            事業に関するご相談・ご質問など、<br />
-            お気軽にお問い合わせください。
-          </p>
+    <div class="brand-divider"></div>
+
+    <div class="brand-feature brand-feature--reverse reveal">
+      <div class="brand-feature__content">
+        <div class="brand-feature__label">BRAND 02 — WHISKEY AGING</div>
+        <div class="brand-feature__logo"><span class="brand-logo-text yadorigi-logo">YADORIGI</span></div>
+        <h3 class="brand-feature__title">日本の森が、<br />ウイスキーを育てる。</h3>
+        <p class="brand-feature__body">
+          YADORIGIは、日本各地の銘木を樽材に使用したウイスキー熟成ブランドです。
+          ミズナラ・桜・梅など日本固有の木材がもたらす独自のフレーバーを通じて、
+          日本の自然と職人の技を世界へ発信します。
+          「木が宿る、ウイスキー」—その一杯に日本の物語を込めて。
+        </p>
+        <ul class="brand-feature__tags">
+          <li>日本産銘木樽</li><li>ウイスキー熟成</li><li>クラフト蒸留</li><li>ギフト・コレクション</li>
+        </ul>
+        <a href="yadorigi.html" class="btn btn--outline btn--sm">YADORIGIを見る</a>
+      </div>
+      <div class="brand-feature__visual">
+        <div class="visual-frame visual-frame--yadorigi" style="padding:48px;min-height:320px;display:flex;align-items:center;justify-content:center;">
+          <svg viewBox="0 0 300 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:300px;">
+            <defs>
+              <radialGradient id="yg1" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="#b5762a" stop-opacity="0.25"/><stop offset="100%" stop-color="#130d06" stop-opacity="0"/></radialGradient>
+              <linearGradient id="yb1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#d4903a" stop-opacity="0.3"/><stop offset="100%" stop-color="#7a4d1a" stop-opacity="0.2"/></linearGradient>
+            </defs>
+            <ellipse cx="150" cy="130" rx="140" ry="115" fill="url(#yg1)"/>
+            <!-- Barrel body -->
+            <ellipse cx="150" cy="80" rx="55" ry="18" fill="none" stroke="#b5762a" stroke-width="1.5" opacity="0.7"/>
+            <ellipse cx="150" cy="200" rx="55" ry="18" fill="none" stroke="#b5762a" stroke-width="1.5" opacity="0.7"/>
+            <path d="M95 80 Q75 130 95 200" fill="none" stroke="#b5762a" stroke-width="1.5" opacity="0.7"/>
+            <path d="M205 80 Q225 130 205 200" fill="none" stroke="#b5762a" stroke-width="1.5" opacity="0.7"/>
+            <rect x="95" y="80" width="110" height="120" rx="4" fill="url(#yb1)" opacity="0.5"/>
+            <!-- Wood grain lines -->
+            <path d="M100 100 Q150 97 200 100" fill="none" stroke="rgba(255,200,100,0.2)" stroke-width="1"/>
+            <path d="M98 120 Q150 116 202 120" fill="none" stroke="rgba(255,200,100,0.2)" stroke-width="1"/>
+            <path d="M97 140 Q150 136 203 140" fill="none" stroke="rgba(255,200,100,0.2)" stroke-width="1"/>
+            <path d="M98 160 Q150 156 202 160" fill="none" stroke="rgba(255,200,100,0.2)" stroke-width="1"/>
+            <path d="M100 180 Q150 176 200 180" fill="none" stroke="rgba(255,200,100,0.2)" stroke-width="1"/>
+            <!-- Hoop rings -->
+            <path d="M93 95 Q150 91 207 95" fill="none" stroke="rgba(181,118,42,0.6)" stroke-width="2.5"/>
+            <path d="M93 150 L207 150" fill="none" stroke="rgba(181,118,42,0.6)" stroke-width="2.5"/>
+            <path d="M93 195 Q150 191 207 195" fill="none" stroke="rgba(181,118,42,0.6)" stroke-width="2.5"/>
+            <!-- Whiskey drops -->
+            <ellipse cx="65" cy="130" rx="8" ry="11" fill="rgba(181,118,42,0.4)" stroke="rgba(181,118,42,0.6)" stroke-width="1"/>
+            <ellipse cx="235" cy="130" rx="8" ry="11" fill="rgba(181,118,42,0.4)" stroke="rgba(181,118,42,0.6)" stroke-width="1"/>
+            <!-- Stars -->
+            <circle cx="45" cy="55" r="1.5" fill="#c9a84c" opacity="0.6"/><circle cx="255" cy="65" r="1.5" fill="#c9a84c" opacity="0.6"/>
+            <circle cx="40" cy="200" r="1" fill="#c9a84c" opacity="0.4"/><circle cx="260" cy="195" r="1" fill="#c9a84c" opacity="0.4"/>
+          </svg>
         </div>
-        <div class="contact-cards">
-          <div class="contact-card">
-            <div class="contact-card__icon">📦</div>
-            <h4 class="contact-card__title">輸入・販売代理</h4>
-            <p class="contact-card__body">海外ブランドの日本展開、独占代理店契約についてのご相談</p>
-          </div>
-          <div class="contact-card">
-            <div class="contact-card__icon">🏷️</div>
-            <h4 class="contact-card__title">ブランドについて</h4>
-            <p class="contact-card__body">Anibo・YADORIGIに関するご質問、取扱店舗・卸のご相談</p>
-          </div>
-          <div class="contact-card">
-            <div class="contact-card__icon">🚀</div>
-            <h4 class="contact-card__title">CF支援サービス</h4>
-            <p class="contact-card__body">クラウドファンディング支援サービスへのご相談・見積もり</p>
-          </div>
+        <div class="brand-accent brand-accent--yadorigi"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY LEVEL1 -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">WHY LEVEL1</p>
+      <h2 class="section-title">LEVEL1が選ばれる理由</h2>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <div class="feature-icon">🔍</div>
+        <h4 class="feature-title">独自のマーケット分析</h4>
+        <p class="feature-body">トレンド調査と消費者インサイトに基づき、日本市場でのポテンシャルが高い商品・ブランドを厳選。参入前から成功の確度を高めます。</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🤝</div>
+        <h4 class="feature-title">ワンストップ支援体制</h4>
+        <p class="feature-body">商品調達・輸入手続き・物流・販促・EC運営まで、すべてのプロセスを一社で対応。複数業者との連携コストを大幅に削減します。</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">📣</div>
+        <h4 class="feature-title">強力なPR・販売網</h4>
+        <p class="feature-body">SNS・インフルエンサー・クラウドファンディングを組み合わせたマーケティングで、ローンチ直後から市場認知を最大化します。</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🏷️</div>
+        <h4 class="feature-title">ブランド価値の最大化</h4>
+        <p class="feature-body">単なる販売代理ではなく、ブランドのストーリーや世界観を守りながら日本市場に合わせたローカライズを実施します。</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🚀</div>
+        <h4 class="feature-title">スピード感ある実行力</h4>
+        <p class="feature-body">意思決定の速さと行動力が強み。市場機会を逃さない迅速なプロジェクト推進で、競合に先んじた展開を実現します。</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">📊</div>
+        <h4 class="feature-title">データ駆動の改善サイクル</h4>
+        <p class="feature-body">販売データ・顧客フィードバックをもとに継続的に改善。PDCAを高速で回すことで、長期的なブランド成長を実現します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="section-header reveal" style="display:flex;justify-content:space-between;align-items:flex-end;text-align:left;margin-bottom:40px;">
+      <div>
+        <p class="section-label" style="display:inline-block;">NEWS</p>
+        <h2 class="section-title section-title--sm" style="margin-top:8px;">お知らせ</h2>
+      </div>
+      <a href="#" class="btn btn--ghost btn--sm" style="flex-shrink:0;">すべて見る</a>
+    </div>
+    <div class="news-grid reveal">
+      <div class="news-card">
+        <div class="news-card__img visual-frame" style="background:linear-gradient(135deg,#0d1117,#161d27);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;"><span style="color:var(--clr-text-muted);font-size:0.75rem;letter-spacing:0.1em;">IMAGE</span></div>
+        <div class="news-card__body">
+          <p class="news-card__date">2024.03.01</p>
+          <span class="news-card__cat">プレスリリース</span>
+          <h4 class="news-card__title">新ブランド「YADORIGI」の先行予約をクラウドファンディングにて開始</h4>
         </div>
-        <div class="contact-form-wrapper">
-          <a href="https://forms.google.com" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--large">
-            お問い合わせフォームへ
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="margin-left:8px">
-              <path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-          <p class="contact-note">※ Googleフォームが開きます。通常2営業日以内にご返信いたします。</p>
+      </div>
+      <div class="news-card">
+        <div class="news-card__img visual-frame" style="background:linear-gradient(135deg,#08171e,#0d2530);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;"><span style="color:var(--clr-text-muted);font-size:0.75rem;letter-spacing:0.1em;">IMAGE</span></div>
+        <div class="news-card__body">
+          <p class="news-card__date">2024.02.15</p>
+          <span class="news-card__cat">お知らせ</span>
+          <h4 class="news-card__title">防災ブランドAniboが全国の防災訓練イベントにて展示出展を開始</h4>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-card__img visual-frame" style="background:linear-gradient(135deg,#090f1d,#0a1830);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;"><span style="color:var(--clr-text-muted);font-size:0.75rem;letter-spacing:0.1em;">IMAGE</span></div>
+        <div class="news-card__body">
+          <p class="news-card__date">2024.01.10</p>
+          <span class="news-card__cat">メディア掲載</span>
+          <h4 class="news-card__title">海外ブランド独占販売代理店として3社との新規契約締結を発表</h4>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="#hero" class="nav-logo">
-            <span class="logo-level">LEVEL</span><span class="logo-one">1</span>
-          </a>
-          <p class="footer-tagline">新たな価値を、世界から日本へ。</p>
-          <p class="footer-corp">株式会社LEVEL1</p>
-        </div>
-        <div class="footer-links">
-          <h5 class="footer-links__heading">事業内容</h5>
-          <ul>
-            <li><a href="#business">輸入事業</a></li>
-            <li><a href="#brands">プライベートブランド</a></li>
-            <li><a href="#crowdfunding">クラウドファンディング支援</a></li>
-          </ul>
-        </div>
-        <div class="footer-links">
-          <h5 class="footer-links__heading">ブランド</h5>
-          <ul>
-            <li><a href="#brands">Anibo（防災ブランド）</a></li>
-            <li><a href="#brands">YADORIGI（銘木ウイスキー）</a></li>
-          </ul>
-        </div>
-        <div class="footer-links">
-          <h5 class="footer-links__heading">お問い合わせ</h5>
-          <ul>
-            <li><a href="#contact">お問い合わせフォーム</a></li>
-          </ul>
-        </div>
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <div style="text-align:center;padding:80px 40px;background:var(--clr-surface);border:1px solid var(--clr-border);border-radius:var(--clr-radius-xl,24px);" class="reveal">
+      <p style="font-family:'Cormorant Garamond',serif;font-size:0.8rem;letter-spacing:0.35em;color:var(--clr-gold);text-transform:uppercase;margin-bottom:16px;">GET IN TOUCH</p>
+      <h2 style="font-family:'Noto Serif JP',serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:600;color:#fff;margin-bottom:20px;">お気軽にご相談ください</h2>
+      <p style="font-size:0.93rem;color:var(--clr-text-muted);line-height:1.9;margin-bottom:40px;">輸入代理・ブランド開発・CF支援など、あらゆるご相談に対応します。</p>
+      <a href="contact.html" class="btn btn--primary btn--large">お問い合わせフォームへ</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><span class="logo-level">LEVEL</span><span class="logo-one">1</span></a>
+        <p class="footer-tagline">新たな価値を、世界から日本へ。<br />輸入事業・プライベートブランド・<br />クラウドファンディング支援。</p>
+        <p class="footer-corp">株式会社LEVEL1</p>
       </div>
-      <div class="footer-bottom">
-        <p class="footer-copy">&copy; 2024 株式会社LEVEL1. All rights reserved.</p>
+      <div class="footer-links">
+        <h5 class="footer-links__heading">会社情報</h5>
+        <ul><li><a href="about.html">会社概要</a></li><li><a href="about.html#message">代表メッセージ</a></li><li><a href="about.html#history">会社沿革</a></li></ul>
+      </div>
+      <div class="footer-links">
+        <h5 class="footer-links__heading">事業・ブランド</h5>
+        <ul><li><a href="import.html">輸入事業</a></li><li><a href="anibo.html">Anibo</a></li><li><a href="yadorigi.html">YADORIGI</a></li><li><a href="crowdfunding.html">CF支援</a></li></ul>
+      </div>
+      <div class="footer-links">
+        <h5 class="footer-links__heading">お問い合わせ</h5>
+        <ul><li><a href="contact.html">お問い合わせ</a></li></ul>
       </div>
     </div>
-  </footer>
-
-  <script src="js/main.js"></script>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2024 株式会社LEVEL1. All rights reserved.</p>
+      <div class="footer-sns"><a href="#">Instagram</a><a href="#">X (Twitter)</a></div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
 </body>
 </html>
