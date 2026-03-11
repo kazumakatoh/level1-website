@@ -57,13 +57,19 @@
   background: linear-gradient(to bottom, transparent 60%, var(--clr-bg) 100%);
 }
 [data-theme="light"] .hero-title-line {
-  background: var(--hero-title-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: #1a1a1a;
+  background-clip: unset;
+  color: #1a1a1a;
 }
-[data-theme="light"] .hero-subtitle { color: rgba(30,20,0,0.55); }
+[data-theme="light"] .hero-title { color: #1a1a1a; }
+[data-theme="light"] .hero-subtitle { color: rgba(30,20,0,0.6); }
 [data-theme="light"] .hero-eyebrow  { color: var(--clr-gold); }
+[data-theme="light"] .hero-scroll-indicator { color: rgba(30,20,0,0.35); }
+[data-theme="light"] .scroll-line { background: linear-gradient(to bottom, var(--clr-gold), transparent); }
+[data-theme="light"] .page-hero__title { color: #1a1a1a; }
+[data-theme="light"] .page-hero__desc { color: rgba(30,20,0,0.6); }
 
 /* Light mode: page hero variants */
 [data-theme="light"] .page-hero--import .page-hero__bg  { background: radial-gradient(ellipse 70% 60% at 50% 40%, rgba(30,80,160,0.08) 0%, transparent 70%), linear-gradient(135deg,#ede9e0 0%,#e4e8f0 100%); }
