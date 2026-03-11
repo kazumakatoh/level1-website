@@ -225,7 +225,34 @@ document.addEventListener('click', (e) => {
 })();
 
 /* ============================================================
-   11. TABS (if present)
+   11. THEME TOGGLE
+   ============================================================ */
+(function initThemeToggle() {
+  const html = document.documentElement;
+  const saved = localStorage.getItem('level1-theme') || 'dark';
+  html.dataset.theme = saved;
+
+  const updateButtons = (theme) => {
+    document.querySelectorAll('.theme-toggle').forEach(btn => {
+      btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+      btn.setAttribute('aria-label', theme === 'dark' ? 'ライトモードに切替' : 'ダークモードに切替');
+    });
+  };
+
+  updateButtons(saved);
+
+  document.querySelectorAll('.theme-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const next = html.dataset.theme === 'dark' ? 'light' : 'dark';
+      html.dataset.theme = next;
+      localStorage.setItem('level1-theme', next);
+      updateButtons(next);
+    });
+  });
+})();
+
+/* ============================================================
+   12. TABS (if present)
    ============================================================ */
 (function initTabs() {
   $$('.tab-btn').forEach(btn => {
