@@ -177,6 +177,21 @@
 /* Light mode: image placeholder */
 [data-theme="light"] .image-placeholder { background: linear-gradient(135deg,#e8e6e0,#dddad2); border-color: rgba(0,0,0,0.1); }
 
+/* Light mode: all image/visual placeholder backgrounds (override hardcoded dark gradients) */
+[data-theme="light"] .visual-frame {
+  background: linear-gradient(135deg, #e8e6e0, #dddad2) !important;
+}
+[data-theme="light"] .visual-frame--anibo   { background: linear-gradient(135deg,#daedf2,#c8e4ea) !important; }
+[data-theme="light"] .visual-frame--yadorigi{ background: linear-gradient(135deg,#f2e8d8,#eed8bc) !important; }
+[data-theme="light"] .visual-frame--import  { background: linear-gradient(135deg,#dfe8f5,#ccd8f0) !important; }
+[data-theme="light"] .visual-frame--cf      { background: linear-gradient(135deg,#e8e0f5,#ddd0f0) !important; }
+[data-theme="light"] .news-card__img span   { color: #aaa8a0 !important; }
+[data-theme="light"] .project-card__img     { font-size: 2.5rem; }
+
+/* Light mode: result card numbers */
+[data-theme="light"] .result-card { background: #ffffff; }
+[data-theme="light"] .result-card__num { color: var(--clr-gold); }
+
 /* Light mode: MVV mission card */
 [data-theme="light"] .mvv-card--mission { background: rgba(160,120,40,0.07); border-color: rgba(160,120,40,0.25); }
 
