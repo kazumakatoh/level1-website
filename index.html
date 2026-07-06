@@ -1,391 +1,286 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="株式会社LEVEL1 — 輸入事業・プライベートブランド・クラウドファンディング支援事業。新たな価値を、世界から日本へ。" />
-  <title>株式会社LEVEL1 | 新たな価値を、世界から日本へ。</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=4" />
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>LEVEL1 ｜ ものづくりで実現する、個人の幸せ、社会課題の解決</title>
+<meta name="description" content="私たちは、輸入貿易・自社D2Cブランド（YADORIGI/Anibo/SOLOFIS）・Amazonコンサルティングを展開するものづくりの会社です。"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles-d.css"/>
 </head>
 <body>
-
-<!-- NAV -->
-<header class="site-header" id="site-header">
-  <nav class="nav-container">
-    <a href="index.html" class="nav-logo"><span class="logo-level">LEVEL</span><span class="logo-one">1</span></a>
-    <ul class="nav-links">
-      <li class="nav-item"><a href="about.html" class="nav-link">会社について</a></li>
-      <li class="nav-item" style="position:relative">
-        <a href="#" class="nav-link">事業内容 <span class="nav-arrow">▾</span></a>
-        <ul class="nav-dropdown">
-          <li><a href="import.html">輸入事業</a></li>
-          <li><a href="crowdfunding.html">CF支援事業</a></li>
-        </ul>
-      </li>
-      <li class="nav-item" style="position:relative">
-        <a href="#" class="nav-link">ブランド <span class="nav-arrow">▾</span></a>
-        <ul class="nav-dropdown">
-          <li><a href="anibo.html">Anibo（防災）</a></li>
-          <li><a href="yadorigi.html">YADORIGI（銘木ウイスキー）</a></li>
-        </ul>
-      </li>
-      <li class="nav-item"><a href="contact.html" class="nav-link nav-link--cta">お問い合わせ</a></li>
-    </ul>
-    <button class="nav-hamburger" id="nav-hamburger" aria-label="メニュー"><span></span><span></span><span></span></button>
+<header class="hd"><div class="container hd-in">
+  <a class="logo" href="#top">LEVEL<b>1</b></a>
+  <nav class="nav">
+    <a href="#business" data-en="Business">事業</a><a href="#brands" data-en="Brands">ブランド</a>
+    <a href="#history" data-en="History">沿革</a><a href="#works" data-en="Works">実績</a><a href="#about" data-en="Company">会社概要</a><a href="#greeting" data-en="Message">代表挨拶</a>
+    <a class="lang" href="#">English</a>
+    <a class="cta" href="#contact" data-en="Contact">お問い合わせ</a>
   </nav>
-</header>
-<div class="mobile-menu" id="mobile-menu">
-  <ul class="mobile-nav-links">
-    <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">会社について</a></li>
-    <li class="mobile-nav-item">
-      <div class="mobile-nav-sub">
-        <a href="import.html">輸入事業</a><a href="crowdfunding.html">CF支援</a>
-      </div>
-    </li>
-    <li class="mobile-nav-item">
-      <div class="mobile-nav-sub">
-        <a href="anibo.html">Anibo</a><a href="yadorigi.html">YADORIGI</a>
-      </div>
-    </li>
-    <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">お問い合わせ</a></li>
-  </ul>
-</div>
+  <button class="nav-toggle" aria-label="メニュー"><span></span><span></span><span></span></button>
+</div></header>
 
-<!-- HERO -->
-<section class="hero" id="hero">
-  <div class="hero-bg"><div class="hero-grain"></div><div class="hero-gradient"></div></div>
-  <div class="hero-particles" id="hero-particles"></div>
-  <div class="hero-content">
-    <p class="hero-eyebrow animate-fade-up">LEVEL1 Co., Ltd.</p>
-    <h1 class="hero-title animate-fade-up delay-1">
-      <span class="hero-title-line">新たな価値を、</span>
-      <span class="hero-title-line">世界から日本へ。</span>
-    </h1>
-    <p class="hero-subtitle animate-fade-up delay-2">
-      輸入事業・プライベートブランド・クラウドファンディング支援を通じて<br />
-      独自の価値を創造し、社会に新しい体験を届けます。
-    </p>
-    <div class="hero-cta animate-fade-up delay-3">
-      <a href="about.html" class="btn btn--primary">会社について</a>
-      <a href="contact.html" class="btn btn--outline">お問い合わせ</a>
-    </div>
-  </div>
-  <div class="hero-scroll-indicator"><span>SCROLL</span><div class="scroll-line"></div></div>
-</section>
-
-<!-- MISSION -->
-<section class="section" style="padding-block: 80px; background: var(--clr-bg);">
-  <div class="container">
-    <div style="max-width:760px;margin-inline:auto;text-align:center;" class="reveal">
-      <p style="font-family:'Cormorant Garamond',serif;font-size:0.8rem;letter-spacing:0.35em;color:var(--clr-gold);text-transform:uppercase;margin-bottom:20px;">Our Mission</p>
-      <p style="font-family:'Noto Serif JP',serif;font-size:clamp(1.3rem,3vw,2rem);font-weight:600;color:var(--clr-white);line-height:1.6;margin-bottom:24px;">
-        「ゼロからイチへ」—<br />誰も気づいていない価値を発見し、<br />世界と日本をつなぐ橋になる。
-      </p>
-      <p style="font-size:0.93rem;color:var(--clr-text-muted);line-height:1.9;">
-        私たちは単に製品を売るのではなく、文化・体験・思想を届けます。<br />
-        海外の優れたブランドを日本に紹介し、日本の伝統と革新から生まれた自社ブランドを世界へ発信する。<br />
-        そのサイクルの中に、次の時代を切り拓くビジネスの芽があると信じています。
-      </p>
+<section class="hero" id="top">
+  <div class="hero-bg"><img src="assets/hero-forest.jpg" alt=""></div>
+  <div class="container hero-in">
+    <span class="eyebrow">Monozukuri Company ・ Est. 2018</span>
+    <h1 data-en="Through monozukuri, we pursue<br>personal happiness and <span class='hl'>solutions to society's challenges</span>.">ものづくりで追求する、<br>個人の幸せ、<span class="hl">社会課題の解決</span>を。</h1>
+    <p class="lead" data-en="We enrich daily life through the power of products and revitalize local industry by making the most of domestic resources. LEVEL1 is a manufacturing company energizing Japan with its own brands.">プロダクトの力で暮らしを豊かに、国産資源の活用で地域産業の活性化に向き合う。私たちは、自社ブランドで日本を元気にするものづくりの会社です。</p>
+    <div class="btns">
+      <a class="btn btn-w" href="#brands" data-en="View Our Brands">ブランドを見る</a>
+      <a class="btn btn-o" href="#contact" data-en="Contact Us">お問い合わせ</a>
     </div>
   </div>
 </section>
 
-<!-- NUMBERS -->
-<section class="section section--dark" style="padding-block:80px;">
-  <div class="container">
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;" class="result-grid">
-      <div class="result-card reveal">
-        <div class="result-card__num"><span data-target="3">0</span></div>
-        <div class="result-card__label">展開事業領域</div>
+
+<section class="sec sec-alt" id="business"><div class="container">
+  <div class="sec-head"><span class="eyebrow">Business</span><h2 data-en="Our Business">事業</h2>
+    <p data-en="Three businesses through which we advance both craft and value creation.">3つの事業で、ものづくりと価値づくりを進めています。</p></div>
+    <div class="feature reveal">
+      <div class="feature-visual"><img src="assets/biz-d2c.jpg" alt=""><span class="fv-tag">D2C</span></div>
+      <div class="feature-body">
+        <span class="num">Business 01</span>
+        <span class="eyebrow" style="display:block;margin-top:4px" data-en="D2C Brand Business">D2Cブランド事業</span>
+        <h3 data-en="Craft that stays loved for years.">長く愛されるものづくりを。</h3>
+        <p data-en="We develop products with domestic materials and original planning. We deliver them in Japan and abroad through our own EC and crowdfunding, valuing direct communication with customers. Our flagship brands are YADORIGI, Anibo and SOLOFIS.">国産の素材活用、独自の企画でプロダクトを開発しています。販売はお客様とのコミュニケーションを重視した自社EC・クラウドファンディングを通じて国内外へ届けます。代表ブランドは YADORIGI・Anibo・SOLOFIS。</p>
+        <ul class="flist"><li data-en="Brand planning & product development">ブランド企画・商品開発</li><li data-en="In-house EC operations">自社EC運営</li><li data-en="Crowdfunding">クラウドファンディング</li></ul>
       </div>
-      <div class="result-card reveal delay-1">
-        <div class="result-card__num"><span data-target="2">0</span></div>
-        <div class="result-card__label">自社ブランド</div>
+    </div>
+    <div class="feature rev reveal">
+      <div class="feature-visual"><img src="assets/biz-import.jpg" alt=""><span class="fv-tag">IMPORT</span></div>
+      <div class="feature-body">
+        <span class="num">Business 02</span>
+        <span class="eyebrow" style="display:block;margin-top:4px" data-en="Import &amp; Trade">輸入貿易事業</span>
+        <h3 data-en="Bringing the world&#39;s best to life in Japan.">海外の魅力を、日本の暮らしへ。</h3>
+        <p data-en="We import and sell appealing overseas products tailored to Japanese tastes. With a track record across the US, China, Korea and Taiwan, our proprietary logistics with partner firms deliver a wide range of goods quickly and safely.">海外の魅力的な製品を、日本人の嗜好に合わせて輸入・販売します。米国・中国・韓国・台湾などで実績があり、提携企業との独自物流で様々なジャンルの商品を素早く安全に届けます。</p>
       </div>
-      <div class="result-card reveal delay-2">
-        <div class="result-card__num"><span data-target="100" data-suffix="+">0</span></div>
-        <div class="result-card__label">取扱商品数</div>
+    </div>
+    <div class="feature reveal">
+      <div class="feature-visual"><img src="assets/biz-amazon.jpg" alt=""><span class="fv-tag">AMAZON</span></div>
+      <div class="feature-body">
+        <span class="num">Business 03</span>
+        <span class="eyebrow" style="display:block;margin-top:4px" data-en="Amazon Consulting">Amazonコンサルティング</span>
+        <h3 data-en="Turning operational know-how into self-reliance.">運用ノウハウを、自走する力に。</h3>
+        <p data-en="Drawing on hands-on experience running our own Amazon/EC business, we provide everything from strategy to operations and in-house enablement &mdash; as know-how, not busywork. Ours is a hands-on partnership that builds your team&#39;s ability to run on its own.">自社でAmazon／EC事業を運営してきた実践知をもとに、戦略から運用・内製化までを“ノウハウとして”提供します。作業代行ではなく、貴社が自走できる力を育てる伴走型の支援です。</p>
+        <ul class="flist"><li data-en="Strategy, goals &amp; budgeting">戦略策定・目標/予算設定</li><li data-en="Product/competitor research &amp; listing">商品/競合リサーチ・商品登録</li><li data-en="Creative/page production &amp; ad strategy">画像・ページ制作／広告戦略・設定</li><li data-en="CVR improvement, in-house enablement &amp; AI">CVR改善・内製化・AI活用</li></ul>
       </div>
-      <div class="result-card reveal delay-3">
-        <div class="result-card__num"><span data-target="98" data-suffix="%">0</span></div>
-        <div class="result-card__label">顧客継続率</div>
+    </div>
+</div></section>
+
+<section class="sec" id="brands"><div class="container">
+  <div class="sec-head"><span class="eyebrow">Our Brands</span><h2 data-en="Our Brands">ブランド</h2>
+    <p data-en="Three of our own brands, each addressing challenges in daily life and society.">暮らしと社会の課題に向き合う、3つの自社ブランド。</p></div>
+    <div class="feature reveal">
+      <div class="feature-visual logo"><img src="assets/brand-yadorigi.jpg" alt="YADORIGI"></div>
+      <div class="feature-body">
+        <span class="num">Brand 01</span>
+        <span class="eyebrow" style="display:block;margin-top:4px" data-en="D2C ・ Domestic Fine Wood">D2C ・ 国産銘木プロダクト</span>
+        <h3>YADORIGI</h3>
+        <p data-en="A product that draws on the trees long native to Japan&#39;s forests. We shape domestic fine woods such as Hokkaido mizunara oak into sticks; placed in a dedicated bottle of whisky, they offer an easy at-home &quot;aging experience.&quot; Over time, the wood lends the drink new character &mdash; a richer moment to savor.">日本の森に昔から宿る木々を活用したプロダクト。北海道ミズナラ、などの国産銘木をスティック状に加工し、専用ボトルにウイスキーを注ぎ込んで、家庭で手軽にできる「熟成体験」を提供するブランドです。木が時間をかけて飲み物に表情を宿す、ゆたかなひとときを提案します。</p>
+        <p class="note" data-en="Using properly managed domestic timber helps regenerate Japan&#39;s forests.">適切に手入れされた国産木材を使うことは、日本の森の再生につながります。</p>
       </div>
+    </div>
+    <div class="feature rev reveal">
+      <div class="feature-visual"><img src="assets/brand-anibo.jpg" alt="Anibo"></div>
+      <div class="feature-body">
+        <span class="num">Brand 02</span>
+        <span class="eyebrow" style="display:block;margin-top:4px" data-en="Disaster Prevention ・ Made to Display">防災 ・ 暮らしに飾れる</span>
+        <h3 data-en="Anibo">Anibo（アニボ）</h3>
+        <p data-en="Japan faces many disasters &mdash; earthquakes, typhoons and more. Rather than tucking your &quot;just in case&quot; preparations away, Anibo lets you display them in your home. With disaster-prevention products designed to blend into daily life, we take on the challenges unique to Japan.">地震・台風など災害の多い日本。「もしも」への備えを、しまい込むのではなく暮らしの中に“飾れる”かたちで。日常になじむデザインの防災プロダクトで、日本特有の災害対策に挑みます。</p>
+        <p class="note" data-en="Disaster-prevention box &quot;A Timid Bear&#39;s Winter Rest,&quot; and more.">防災ボックス《ビビりグマの冬ごもり》ほか。</p>
+      </div>
+    </div>
+    <div class="feature reveal">
+      <div class="feature-visual logo"><img src="assets/brand-solofis.jpg" alt="SOLOFIS"></div>
+      <div class="feature-body">
+        <span class="num">Brand 03</span>
+        <span class="eyebrow" style="display:block;margin-top:4px" data-en="Anti-Static ・ Everyday Essential">静電気除去 ・ 暮らしの必需品</span>
+        <h3>SOLOFIS</h3>
+        <p data-en="A brand taking on &quot;static electricity,&quot; winter&#39;s stubborn foe. We developed a dedicated sheet that releases the charge built up in your body with a single touch &mdash; an item for natural, everyday static protection.">冬場の難敵「静電気」に挑むブランドです。触るだけで体に蓄積された電気を外に放出する専用シートを開発。日常で自然な静電気対策が取れるアイテムを提案します。</p>
+        <p class="note" data-en="We also make original corporate novelty items (B2B).">企業向けノベルティのオリジナル制作も承ります（B2B対応）。</p>
+      </div>
+    </div>
+</div></section>
+
+<section class="sec sec-alt" id="history"><div class="container">
+  <div class="sec-head"><span class="eyebrow">History</span><h2 data-en="Our History">会社の歴史</h2>
+    <p data-en="From our founding in 2018, we have grown from import trade into our own brands.">2018年の設立から、輸入貿易・自社ブランドへと歩みを進めてきました。</p></div>
+  <div class="timeline">
+      <div class="tl reveal"><div class="yr">2018.03</div><div class="ev" data-en="LEVEL1 Inc. founded">株式会社LEVEL1 設立</div></div>
+      <div class="tl reveal"><div class="yr">2018.06</div><div class="ev" data-en="Built a domestic sales & logistics network">日本国内の販売・物流網を構築</div></div>
+      <div class="tl reveal"><div class="yr">2019.08</div><div class="ev" data-en="Expanded import business (US, China, Korea, Taiwan)">海外輸入事業を推進（米・中・韓・台へ営業展開）</div></div>
+      <div class="tl reveal"><div class="yr">2019.10</div><div class="ev" data-en="Began business leveraging crowdfunding">クラウドファンディングを活用した事業展開を開始</div></div>
+      <div class="tl reveal"><div class="yr">2020.12</div><div class="ev" data-en="Surpassed &yen;100M in cumulative crowdfunding sales">クラウドファンディング累計総売上 1億円を突破</div></div>
+      <div class="tl reveal"><div class="yr">2021.01</div><div class="ev" data-en="Launched a local-factory &times; crowdfunding scheme">下町の町工場 × クラウドファンディングのスキーム開始</div></div>
+      <div class="tl reveal"><div class="yr">2022.10</div><div class="ev" data-en="Launched anti-static brand SOLOFIS">静電気ブランド「SOLOFIS」始動</div></div>
+      <div class="tl reveal"><div class="yr">2024.04</div><div class="ev" data-en="Entered the US market">米国市場への参入開始</div></div>
+      <div class="tl reveal"><div class="yr">2025.12</div><div class="ev" data-en="Launched disaster-prevention brand Anibo">防災ブランド「Anibo」始動</div></div>
+      <div class="tl reveal"><div class="yr">2026.07</div><div class="ev" data-en="Launched domestic-fine-wood brand YADORIGI">国産銘木ブランド「YADORIGI」始動</div></div>
+  </div>
+</div></section>
+
+<section class="sec" id="works"><div class="container">
+  <div class="sec-head"><span class="eyebrow">Works</span><h2 data-en="Crowdfunding Results">クラウドファンディング実績</h2>
+    <p data-en="Through partnerships with rising overseas makers and collaborations with local factories, we have run many successful projects.">海外の新進気鋭のメーカーとのパートナーシップ、下町の町工場との連携をはじめ、多数のプロジェクトを実行しました。</p></div>
+  <div class="works-banner reveal">
+    <div><b>¥119,945,778</b><span data-en="Total raised (cumulative)">応援購入 総額（累計）</span></div>
+    <div><b>20<span class="u" data-en="">件</span></b><span data-en="Projects (cumulative)">プロジェクト（累計）</span></div>
+    <div><b>7,396<span class="u" data-en="">人</span></b><span data-en="Backers (total)">サポーター（延べ）</span></div>
+  </div>
+  <div class="works">
+      <a class="work reveal" href="https://www.makuake.com/project/metaura/" target="_blank" rel="noopener">
+        <div class="work-thumb"><img src="assets/cf/metaura.jpg" alt=""></div>
+        <div class="work-body"><h4 data-en="Metaura: a neck cooler with powerful cold air to beat the summer heat">首に掛けるクーラーで夏を乗り切る！超冷風＆大冷却面スマートエアコンMetaura</h4>
+          <div class="work-stats">
+            <div><b>¥36,715,400</b><span data-en="Total raised">応援購入総額</span></div>
+            <div><b>1,468<i data-en="">人</i></b><span data-en="Backers">サポーター</span></div>
+            <div><b>7,343<i>%</i></b><span data-en="Achievement">達成率</span></div>
+          </div></div></a>
+      <a class="work reveal" href="https://www.makuake.com/project/speediance2/" target="_blank" rel="noopener">
+        <div class="work-thumb"><img src="assets/cf/speediance2.png" alt=""></div>
+        <div class="work-body"><h4 data-en="A home personal gym with an AI trainer, covering all 7 major muscle groups">AI専属トレーナー付きパーソナルジムを自宅で。７つのメイン筋肉を全てカバー!</h4>
+          <div class="work-stats">
+            <div><b>¥20,908,400</b><span data-en="Total raised">応援購入総額</span></div>
+            <div><b>148<i data-en="">人</i></b><span data-en="Backers">サポーター</span></div>
+            <div><b>4,182<i>%</i></b><span data-en="Achievement">達成率</span></div>
+          </div></div></a>
+      <a class="work reveal" href="https://www.makuake.com/project/pocke_tool2/" target="_blank" rel="noopener">
+        <div class="work-thumb"><img src="assets/cf/pocke_tool2.png" alt=""></div>
+        <div class="work-body"><h4 data-en="PockeTool2.0: an ultra-light 30-in-1 card multitool for camping & DIY">キャンプ・DIYにマルチツール 30in1超軽量カード型PockeTool2.0</h4>
+          <div class="work-stats">
+            <div><b>¥10,619,560</b><span data-en="Total raised">応援購入総額</span></div>
+            <div><b>1,862<i data-en="">人</i></b><span data-en="Backers">サポーター</span></div>
+            <div><b>5,310<i>%</i></b><span data-en="Achievement">達成率</span></div>
+          </div></div></a>
+      <a class="work reveal" href="https://www.makuake.com/project/atowak/" target="_blank" rel="noopener">
+        <div class="work-thumb"><img src="assets/cf/atowak.png" alt=""></div>
+        <div class="work-body"><h4 data-en="ATOWAK: an automatic mechanical watch with a fresh way to tell time">真新しい時間の見方！タコメーター付き自動巻き機械式腕時計「ATOWAK」</h4>
+          <div class="work-stats">
+            <div><b>¥9,140,240</b><span data-en="Total raised">応援購入総額</span></div>
+            <div><b>211<i data-en="">人</i></b><span data-en="Backers">サポーター</span></div>
+            <div><b>4,570<i>%</i></b><span data-en="Achievement">達成率</span></div>
+          </div></div></a>
+      <a class="work reveal" href="https://www.makuake.com/project/iswift/" target="_blank" rel="noopener">
+        <div class="work-thumb"><img src="assets/cf/iswift.png" alt=""></div>
+        <div class="work-body"><h4 data-en="iSWIFT: a PC desk & stand that turns any sofa or bed into a workspace">ソファーもベッドも快適なPC環境に早変わり！iSWIFT PCデスク＆スタンド</h4>
+          <div class="work-stats">
+            <div><b>¥7,641,900</b><span data-en="Total raised">応援購入総額</span></div>
+            <div><b>649<i data-en="">人</i></b><span data-en="Backers">サポーター</span></div>
+            <div><b>1,528<i>%</i></b><span data-en="Achievement">達成率</span></div>
+          </div></div></a>
+      <a class="work reveal" href="https://www.makuake.com/project/acasis_ssd/" target="_blank" rel="noopener">
+        <div class="work-thumb"><img src="assets/cf/acasis_ssd.jpg" alt=""></div>
+        <div class="work-body"><h4 data-en="ACASIS: an ultra-fast SSD fused with a 10-in-1 multifunction USB hub">超高速データ転送SSDを10 in 1多機能USBハブと融合！「ACASIS」</h4>
+          <div class="work-stats">
+            <div><b>¥6,780,900</b><span data-en="Total raised">応援購入総額</span></div>
+            <div><b>562<i data-en="">人</i></b><span data-en="Backers">サポーター</span></div>
+            <div><b>3,390<i>%</i></b><span data-en="Achievement">達成率</span></div>
+          </div></div></a>
+  </div>
+</div></section>
+
+<section class="sec sec-alt" id="about"><div class="container">
+  <div class="sec-head"><span class="eyebrow">Company Info</span><h2 data-en="Company Profile">会社概要</h2></div>
+  <div class="about">
+    <dl class="cinfo">
+      <div class="row"><svg class="i"><rect x="3" y="3" width="11" height="18" rx="1"/><path d="M14 9h6a1 1 0 0 1 1 1v11h-7"/><line x1="6.5" y1="7" x2="10.5" y2="7"/><line x1="6.5" y1="11" x2="10.5" y2="11"/><line x1="6.5" y1="15" x2="10.5" y2="15"/></svg><dt data-en="Company">会社名</dt><dd data-en="LEVEL1 Inc.">株式会社LEVEL1</dd></div>
+      <div class="row"><svg class="i"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><dt data-en="CEO">代表者</dt><dd data-en="Kazuma Kato, CEO">代表取締役　加藤 一馬</dd></div>
+      <div class="row"><svg class="i"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><dt data-en="Founded">設立</dt><dd data-en="March 16, 2018">2018年3月16日</dd></div>
+      <div class="row"><svg class="i"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><dt data-en="Address">所在地</dt><dd data-en="3-45 Asagaya-minami, Suginami-ku, Tokyo 166-0004">〒166-0004 東京都杉並区阿佐谷南3-45</dd></div>
+      <div class="row"><svg class="i"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><dt data-en="Business">事業内容</dt><dd data-en="Import &amp; trade / in-house D2C brand planning &amp; sales / Amazon consulting">輸入貿易事業／自社ブランド（D2C）企画・販売／Amazonコンサルティング</dd></div>
+      <div class="row"><svg class="i"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><dt data-en="Contact">お問い合わせ</dt><dd>contact@level1.biz</dd></div>
+      <div class="row"><svg class="i"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><dt data-en="Invoice Reg. No.">登録番号</dt><dd data-en="Qualified Invoice Issuer T4-0400-0110-3934">適格請求書発行事業者 T4-0400-0110-3934</dd></div>
+    </dl>
+    <div style="align-self:start">
+      <div class="greet-photo" style="aspect-ratio:16/11"><img src="assets/about-team.jpg" alt="チームでプロジェクトを進める様子" style="object-position:center"></div>
     </div>
   </div>
-</section>
-
-<!-- BUSINESS -->
-<section class="section" id="business">
-  <div class="container">
-    <div class="section-header reveal">
-      <p class="section-label">BUSINESS</p>
-      <h2 class="section-title">3つの事業領域</h2>
-      <p class="section-desc">それぞれの事業が連携し、より大きな価値を生み出すエコシステムを構築しています。</p>
-    </div>
-    <div class="business-grid">
-      <div class="business-card">
-        <div class="business-card__number">01</div>
-        <div class="business-card__icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        </div>
-        <h3 class="business-card__title">輸入事業</h3>
-        <span class="business-card__subtitle">Exclusive Import Agency</span>
-        <p class="business-card__body">海外の優良ブランドと独占販売代理店契約を締結し、日本市場への参入を一貫サポート。市場調査・物流・販路開拓・マーケティングまで包括的に対応します。</p>
-        <a href="import.html" class="business-card__link">詳しく見る →</a>
-      </div>
-      <div class="business-card">
-        <div class="business-card__number">02</div>
-        <div class="business-card__icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.09 6.26H21l-5.47 3.97 2.09 6.26L12 14.52l-5.62 4.07 2.09-6.26L3 8.26h6.91L12 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-        </div>
-        <h3 class="business-card__title">プライベートブランド</h3>
-        <span class="business-card__subtitle">Anibo &amp; YADORIGI</span>
-        <p class="business-card__body">防災ブランド「Anibo」と日本産銘木×ウイスキー熟成ブランド「YADORIGI」の2ブランドを展開。社会課題と文化的価値に着目した独自の市場を開拓します。</p>
-        <a href="anibo.html" class="business-card__link">ブランドを見る →</a>
-      </div>
-      <div class="business-card">
-        <div class="business-card__number">03</div>
-        <div class="business-card__icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 17v-3M7 17V9M11 17V5M15 17v-5M19 17v-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        </div>
-        <h3 class="business-card__title">クラウドファンディング<br />支援事業</h3>
-        <span class="business-card__subtitle">CF Support</span>
-        <p class="business-card__body">企画立案からページ制作・PR・プロジェクト管理まで、クラウドファンディング成功に向けた包括的サポートを提供。新商品・サービスの市場投入を加速します。</p>
-        <a href="crowdfunding.html" class="business-card__link">詳しく見る →</a>
-      </div>
+</div></section>
+<section class="sec" id="greeting"><div class="container">
+  <div class="sec-head"><span class="eyebrow">Message</span><h2 data-en="Message from the CEO">代表挨拶</h2></div>
+  <div class="greet">
+    <div class="greet-photo"><img src="assets/leader.jpg" alt="代表取締役 加藤一馬"></div>
+    <div>
+      <h2 data-en="Moving beyond &quot;selling volume&quot; to become a brand chosen for <span class='hl'>the value it adds</span>.">「量を売る」から離れ、<br><span class="hl">「価値を高める」ことで</span>選ばれるブランドを。</h2>
+      <p data-en="Our society overflows with convenient goods. It feels affluent enough that we no longer need to create new products just to fill a gap. Asking ourselves what kind of manufacturing this era truly needs, we arrived at one answer: the depth of added value for the customer.">私たちの社会は多くの便利なもので溢れています。もはや、足りないものを探して新しい商品を作る必要がないほどに豊かな社会と感じています。そんな時代に必要なものづくりとは何かを考えたときに、お客様にとっての「付加価値の高さ」と、私たちは考えました。</p>
+      <p data-en="Products that move people and stay loved for years. We believe that, today, manufacturing is best approached with a sensibility close to entertainment.">お客様の心を動かし、長く愛され続けるプロダクト。ものづくりは、エンターテインメントに近い感覚が今の時代には適していると感じております。</p>
+      <p data-en="Through our products, we enrich each person&#39;s life and emotions a little, and contribute to solving social challenges such as forest regeneration and disaster preparedness &mdash; that is who we aspire to be. However the times change, we are determined to keep watching from the customer&#39;s point of view, keep evolving, and remain a company loved for the long term.">私たちは、プロダクトを通じて一人ひとりの暮らしや感情を少し豊かにし、森の再生や防災といった社会の課題解決に貢献していきます——それが私たちの目指す姿です。時代が変わっても、お客様の目線を見続けて変わり続け、長く愛される存在でありたいと強く胸に刻んでます。</p>
+      <p class="by" data-en="Kazuma Kato<span>CEO, LEVEL1 Inc.</span>">加藤 一馬<span>株式会社LEVEL1 代表取締役</span></p>
     </div>
   </div>
-</section>
+</div></section>
 
-<!-- BRANDS SHOWCASE -->
-<section class="section section--dark" id="brands">
-  <div class="container">
-    <div class="section-header reveal">
-      <p class="section-label">OUR BRANDS</p>
-      <h2 class="section-title">自社ブランド</h2>
+<section class="sec cta-sec" id="contact"><div class="container">
+  <span class="eyebrow">Contact</span>
+  <h2 data-en="Contact Us">お問い合わせ</h2>
+  <p data-en="For press, business, brand or consulting inquiries, please reach out here.">取材・お取引・ブランド・コンサルティングに関するご相談はこちらから。</p>
+  <form class="cform" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="0829acf2-3e3c-4e8b-92d0-b7e1ca0f9c16">
+    <input type="hidden" name="subject" value="LEVEL1 サイトからのお問い合わせ">
+    <input type="hidden" name="from_name" value="LEVEL1 Website">
+    <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+    <div class="cf-grid">
+      <label><span data-en="Name">お名前<em>*</em></span><input type="text" name="name" required></label>
+      <label><span data-en="Company">会社名</span><input type="text" name="company"></label>
     </div>
-    <div class="brand-feature reveal">
-      <div class="brand-feature__content">
-        <div class="brand-feature__label">BRAND 01 — DISASTER PREVENTION</div>
-        <div class="brand-feature__logo"><span class="brand-logo-text anibo-logo">Anibo</span></div>
-        <h3 class="brand-feature__title">いつもの暮らしに、<br />備えをプラスする。</h3>
-        <p class="brand-feature__body">
-          Aniboは「安心」と「備え」を日常に溶け込ませる防災ブランドです。
-          「防災は特別なことではない」という思想のもと、
-          デザイン性と機能性を両立した製品を開発。
-          いざというときに頼れる、毎日持ちたくなる防災グッズを提供します。
-        </p>
-        <ul class="brand-feature__tags">
-          <li>防災グッズ</li><li>非常食</li><li>緊急キット</li><li>防災教育</li>
-        </ul>
-        <a href="anibo.html" class="btn btn--outline btn--sm">Aniboを見る</a>
-      </div>
-      <div class="brand-feature__visual">
-        <div class="visual-frame visual-frame--anibo" style="padding:48px;min-height:320px;display:flex;align-items:center;justify-content:center;">
-          <svg viewBox="0 0 300 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:300px;">
-            <defs>
-              <radialGradient id="ag1" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#3a8fa3" stop-opacity="0.3"/><stop offset="100%" stop-color="#0d2530" stop-opacity="0"/></radialGradient>
-            </defs>
-            <ellipse cx="150" cy="130" rx="140" ry="120" fill="url(#ag1)"/>
-            <!-- Shield -->
-            <path d="M150 30 L220 60 L220 140 Q220 200 150 230 Q80 200 80 140 L80 60 Z" fill="rgba(58,143,163,0.12)" stroke="#3a8fa3" stroke-width="1.5" stroke-linejoin="round"/>
-            <!-- House inside shield -->
-            <path d="M150 95 L115 120 L115 165 L185 165 L185 120 Z" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linejoin="round"/>
-            <path d="M107 122 L150 88 L193 122" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <rect x="138" y="142" width="24" height="23" rx="2" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
-            <!-- Check mark -->
-            <path d="M130 135 L144 149 L172 121" fill="none" stroke="#3a8fa3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <!-- Outer rings -->
-            <circle cx="150" cy="130" r="95" fill="none" stroke="rgba(58,143,163,0.15)" stroke-width="1" stroke-dasharray="4 6"/>
-            <circle cx="150" cy="130" r="115" fill="none" stroke="rgba(58,143,163,0.08)" stroke-width="1" stroke-dasharray="3 8"/>
-            <!-- Dots -->
-            <circle cx="55" cy="80" r="2" fill="#3a8fa3" opacity="0.5"/><circle cx="245" cy="90" r="2" fill="#3a8fa3" opacity="0.5"/>
-            <circle cx="60" cy="180" r="1.5" fill="#3a8fa3" opacity="0.4"/><circle cx="240" cy="170" r="1.5" fill="#3a8fa3" opacity="0.4"/>
-          </svg>
-        </div>
-        <div class="brand-accent brand-accent--anibo"></div>
-      </div>
-    </div>
+    <label><span data-en="Email">メールアドレス<em>*</em></span><input type="email" name="email" required></label>
+    <label><span data-en="Inquiry type">お問い合わせ種別</span>
+      <select name="type">
+        <option data-en="Press">取材</option>
+        <option data-en="Business">お取引</option>
+        <option data-en="Brand">ブランド</option>
+        <option data-en="Consulting">コンサルティング</option>
+        <option data-en="Other">その他</option>
+      </select>
+    </label>
+    <label><span data-en="Message">お問い合わせ内容<em>*</em></span><textarea name="message" rows="5" required></textarea></label>
+    <button class="btn btn-p cf-submit" type="submit" data-en="Send">送信する</button>
+    <p class="cf-note" data-en="We usually reply within a few business days.">通常、数営業日以内にご返信します。</p>
+  </form>
+</div></section>
 
-    <div class="brand-divider"></div>
-
-    <div class="brand-feature brand-feature--reverse reveal">
-      <div class="brand-feature__content">
-        <div class="brand-feature__label">BRAND 02 — WHISKEY AGING</div>
-        <div class="brand-feature__logo"><span class="brand-logo-text yadorigi-logo">YADORIGI</span></div>
-        <h3 class="brand-feature__title">日本の森が、<br />ウイスキーを育てる。</h3>
-        <p class="brand-feature__body">
-          YADORIGIは、日本各地の銘木を樽材に使用したウイスキー熟成ブランドです。
-          ミズナラ・桜・梅など日本固有の木材がもたらす独自のフレーバーを通じて、
-          日本の自然と職人の技を世界へ発信します。
-          「木が宿る、ウイスキー」—その一杯に日本の物語を込めて。
-        </p>
-        <ul class="brand-feature__tags">
-          <li>日本産銘木樽</li><li>ウイスキー熟成</li><li>クラフト蒸留</li><li>ギフト・コレクション</li>
-        </ul>
-        <a href="yadorigi.html" class="btn btn--outline btn--sm">YADORIGIを見る</a>
-      </div>
-      <div class="brand-feature__visual">
-        <div class="visual-frame visual-frame--yadorigi" style="padding:48px;min-height:320px;display:flex;align-items:center;justify-content:center;">
-          <svg viewBox="0 0 300 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:300px;">
-            <defs>
-              <radialGradient id="yg1" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="#b5762a" stop-opacity="0.25"/><stop offset="100%" stop-color="#130d06" stop-opacity="0"/></radialGradient>
-              <linearGradient id="yb1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#d4903a" stop-opacity="0.3"/><stop offset="100%" stop-color="#7a4d1a" stop-opacity="0.2"/></linearGradient>
-            </defs>
-            <ellipse cx="150" cy="130" rx="140" ry="115" fill="url(#yg1)"/>
-            <!-- Barrel body -->
-            <ellipse cx="150" cy="80" rx="55" ry="18" fill="none" stroke="#b5762a" stroke-width="1.5" opacity="0.7"/>
-            <ellipse cx="150" cy="200" rx="55" ry="18" fill="none" stroke="#b5762a" stroke-width="1.5" opacity="0.7"/>
-            <path d="M95 80 Q75 130 95 200" fill="none" stroke="#b5762a" stroke-width="1.5" opacity="0.7"/>
-            <path d="M205 80 Q225 130 205 200" fill="none" stroke="#b5762a" stroke-width="1.5" opacity="0.7"/>
-            <rect x="95" y="80" width="110" height="120" rx="4" fill="url(#yb1)" opacity="0.5"/>
-            <!-- Wood grain lines -->
-            <path d="M100 100 Q150 97 200 100" fill="none" stroke="rgba(255,200,100,0.2)" stroke-width="1"/>
-            <path d="M98 120 Q150 116 202 120" fill="none" stroke="rgba(255,200,100,0.2)" stroke-width="1"/>
-            <path d="M97 140 Q150 136 203 140" fill="none" stroke="rgba(255,200,100,0.2)" stroke-width="1"/>
-            <path d="M98 160 Q150 156 202 160" fill="none" stroke="rgba(255,200,100,0.2)" stroke-width="1"/>
-            <path d="M100 180 Q150 176 200 180" fill="none" stroke="rgba(255,200,100,0.2)" stroke-width="1"/>
-            <!-- Hoop rings -->
-            <path d="M93 95 Q150 91 207 95" fill="none" stroke="rgba(181,118,42,0.6)" stroke-width="2.5"/>
-            <path d="M93 150 L207 150" fill="none" stroke="rgba(181,118,42,0.6)" stroke-width="2.5"/>
-            <path d="M93 195 Q150 191 207 195" fill="none" stroke="rgba(181,118,42,0.6)" stroke-width="2.5"/>
-            <!-- Whiskey drops -->
-            <ellipse cx="65" cy="130" rx="8" ry="11" fill="rgba(181,118,42,0.4)" stroke="rgba(181,118,42,0.6)" stroke-width="1"/>
-            <ellipse cx="235" cy="130" rx="8" ry="11" fill="rgba(181,118,42,0.4)" stroke="rgba(181,118,42,0.6)" stroke-width="1"/>
-            <!-- Stars -->
-            <circle cx="45" cy="55" r="1.5" fill="#c9a84c" opacity="0.6"/><circle cx="255" cy="65" r="1.5" fill="#c9a84c" opacity="0.6"/>
-            <circle cx="40" cy="200" r="1" fill="#c9a84c" opacity="0.4"/><circle cx="260" cy="195" r="1" fill="#c9a84c" opacity="0.4"/>
-          </svg>
-        </div>
-        <div class="brand-accent brand-accent--yadorigi"></div>
-      </div>
-    </div>
+<footer class="ft"><div class="container ft-in">
+  <div>
+    <div class="logo" style="font-family:var(--en);font-weight:800;font-size:1.3rem">LEVEL<b style="color:var(--blue)">1</b></div>
+    <p style="font-size:.85rem" data-en="A manufacturing company nurturing its own brands, built on domestic materials and Japanese craftsmanship.">国産の素材と日本のものづくりを活かした自社ブランドを育てる、ものづくりの会社です。</p>
   </div>
-</section>
+  <div><h4 data-en="Business &amp; Brands">事業・ブランド</h4>
+    <a href="#business" data-en="Business">事業</a><a href="#brands">YADORIGI / Anibo / SOLOFIS</a><a href="#works" data-en="Works">実績</a></div>
+  <div><h4 data-en="Company">会社情報</h4>
+    <a href="#greeting" data-en="Message">代表挨拶</a><a href="#history" data-en="History">沿革</a><a href="#about" data-en="Company Profile">会社概要</a><a href="#contact" data-en="Contact">お問い合わせ</a></div>
+  <p class="cp">© 2018–2026 LEVEL1 Inc. All rights reserved.</p>
+</div></footer>
 
-<!-- WHY LEVEL1 -->
-<section class="section">
-  <div class="container">
-    <div class="section-header reveal">
-      <p class="section-label">WHY LEVEL1</p>
-      <h2 class="section-title">LEVEL1が選ばれる理由</h2>
-    </div>
-    <div class="feature-grid">
-      <div class="feature-item">
-        <div class="feature-icon">🔍</div>
-        <h4 class="feature-title">独自のマーケット分析</h4>
-        <p class="feature-body">トレンド調査と消費者インサイトに基づき、日本市場でのポテンシャルが高い商品・ブランドを厳選。参入前から成功の確度を高めます。</p>
-      </div>
-      <div class="feature-item">
-        <div class="feature-icon">🤝</div>
-        <h4 class="feature-title">ワンストップ支援体制</h4>
-        <p class="feature-body">商品調達・輸入手続き・物流・販促・EC運営まで、すべてのプロセスを一社で対応。複数業者との連携コストを大幅に削減します。</p>
-      </div>
-      <div class="feature-item">
-        <div class="feature-icon">📣</div>
-        <h4 class="feature-title">強力なPR・販売網</h4>
-        <p class="feature-body">SNS・インフルエンサー・クラウドファンディングを組み合わせたマーケティングで、ローンチ直後から市場認知を最大化します。</p>
-      </div>
-      <div class="feature-item">
-        <div class="feature-icon">🏷️</div>
-        <h4 class="feature-title">ブランド価値の最大化</h4>
-        <p class="feature-body">単なる販売代理ではなく、ブランドのストーリーや世界観を守りながら日本市場に合わせたローカライズを実施します。</p>
-      </div>
-      <div class="feature-item">
-        <div class="feature-icon">🚀</div>
-        <h4 class="feature-title">スピード感ある実行力</h4>
-        <p class="feature-body">意思決定の速さと行動力が強み。市場機会を逃さない迅速なプロジェクト推進で、競合に先んじた展開を実現します。</p>
-      </div>
-      <div class="feature-item">
-        <div class="feature-icon">📊</div>
-        <h4 class="feature-title">データ駆動の改善サイクル</h4>
-        <p class="feature-body">販売データ・顧客フィードバックをもとに継続的に改善。PDCAを高速で回すことで、長期的なブランド成長を実現します。</p>
-      </div>
-    </div>
-  </div>
-</section>
+<script>
+(function(){
+  var t=document.querySelector('.nav-toggle'),n=document.querySelector('.nav');
+  if(t&&n){t.addEventListener('click',function(){n.classList.toggle('open');});
+    n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');});});}
+  var els=document.querySelectorAll('.reveal');
+  function showAll(){els.forEach(function(e){e.classList.add('vis');});}
+  document.documentElement.classList.add('anim');
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target);}});},{threshold:.06,rootMargin:'0px 0px -5% 0px'});els.forEach(function(e){io.observe(e);});
+    setTimeout(showAll,2200);window.addEventListener('load',function(){setTimeout(showAll,300);});}
+  else showAll();
+})();
 
-<!-- NEWS -->
-<section class="section section--dark">
-  <div class="container">
-    <div class="section-header reveal" style="display:flex;justify-content:space-between;align-items:flex-end;text-align:left;margin-bottom:40px;">
-      <div>
-        <p class="section-label" style="display:inline-block;">NEWS</p>
-        <h2 class="section-title section-title--sm" style="margin-top:8px;">お知らせ</h2>
-      </div>
-      <a href="#" class="btn btn--ghost btn--sm" style="flex-shrink:0;">すべて見る</a>
-    </div>
-    <div class="news-grid reveal">
-      <div class="news-card">
-        <div class="news-card__img visual-frame" style="background:linear-gradient(135deg,#0d1117,#161d27);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;"><span style="color:var(--clr-text-muted);font-size:0.75rem;letter-spacing:0.1em;">IMAGE</span></div>
-        <div class="news-card__body">
-          <p class="news-card__date">2024.03.01</p>
-          <span class="news-card__cat">プレスリリース</span>
-          <h4 class="news-card__title">新ブランド「YADORIGI」の先行予約をクラウドファンディングにて開始</h4>
-        </div>
-      </div>
-      <div class="news-card">
-        <div class="news-card__img visual-frame" style="background:linear-gradient(135deg,#08171e,#0d2530);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;"><span style="color:var(--clr-text-muted);font-size:0.75rem;letter-spacing:0.1em;">IMAGE</span></div>
-        <div class="news-card__body">
-          <p class="news-card__date">2024.02.15</p>
-          <span class="news-card__cat">お知らせ</span>
-          <h4 class="news-card__title">防災ブランドAniboが全国の防災訓練イベントにて展示出展を開始</h4>
-        </div>
-      </div>
-      <div class="news-card">
-        <div class="news-card__img visual-frame" style="background:linear-gradient(135deg,#090f1d,#0a1830);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;"><span style="color:var(--clr-text-muted);font-size:0.75rem;letter-spacing:0.1em;">IMAGE</span></div>
-        <div class="news-card__body">
-          <p class="news-card__date">2024.01.10</p>
-          <span class="news-card__cat">メディア掲載</span>
-          <h4 class="news-card__title">海外ブランド独占販売代理店として3社との新規契約締結を発表</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="section">
-  <div class="container">
-    <div style="text-align:center;padding:80px 40px;background:var(--clr-surface);border:1px solid var(--clr-border);border-radius:var(--clr-radius-xl,24px);" class="reveal">
-      <p style="font-family:'Cormorant Garamond',serif;font-size:0.8rem;letter-spacing:0.35em;color:var(--clr-gold);text-transform:uppercase;margin-bottom:16px;">GET IN TOUCH</p>
-      <h2 style="font-family:'Noto Serif JP',serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:600;color:var(--clr-white);margin-bottom:20px;">お気軽にご相談ください</h2>
-      <p style="font-size:0.93rem;color:var(--clr-text-muted);line-height:1.9;margin-bottom:40px;">輸入代理・ブランド開発・CF支援など、あらゆるご相談に対応します。</p>
-      <a href="contact.html" class="btn btn--primary btn--large">お問い合わせフォームへ</a>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="nav-logo"><span class="logo-level">LEVEL</span><span class="logo-one">1</span></a>
-        <p class="footer-tagline">新たな価値を、世界から日本へ。<br />輸入事業・プライベートブランド・<br />クラウドファンディング支援。</p>
-        <p class="footer-corp">株式会社LEVEL1</p>
-      </div>
-      <div class="footer-links">
-        <h5 class="footer-links__heading">会社情報</h5>
-        <ul><li><a href="about.html">会社概要</a></li><li><a href="about.html#message">代表メッセージ</a></li><li><a href="about.html#history">会社沿革</a></li></ul>
-      </div>
-      <div class="footer-links">
-        <h5 class="footer-links__heading">事業・ブランド</h5>
-        <ul><li><a href="import.html">輸入事業</a></li><li><a href="anibo.html">Anibo</a></li><li><a href="yadorigi.html">YADORIGI</a></li><li><a href="crowdfunding.html">CF支援</a></li></ul>
-      </div>
-      <div class="footer-links">
-        <h5 class="footer-links__heading">お問い合わせ</h5>
-        <ul><li><a href="contact.html">お問い合わせ</a></li></ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p class="footer-copy">&copy; 2024 株式会社LEVEL1. All rights reserved.</p>
-      <div class="footer-sns"><a href="#">Instagram</a><a href="#">X (Twitter)</a></div>
-    </div>
-  </div>
-</footer>
-<button class="theme-toggle" aria-label="テーマ切替">☀️</button>
-<script src="js/main.js?v=4"></script>
-</body>
-</html>
+(function(){
+  var root=document.documentElement, btn=document.querySelector('.lang');
+  var TJA=document.title, TEN='LEVEL1 | Craftsmanship for personal happiness and solutions to social challenges';
+  var nodes=document.querySelectorAll('[data-en]');
+  nodes.forEach(function(el){ el.setAttribute('data-ja', el.innerHTML); });
+  function setLang(l){
+    root.setAttribute('lang', l);
+    nodes.forEach(function(el){ el.innerHTML = (l==='en') ? el.getAttribute('data-en') : el.getAttribute('data-ja'); });
+    document.title = (l==='en') ? TEN : TJA;
+    if(btn) btn.textContent = (l==='en') ? '日本語' : 'English';
+    try{ localStorage.setItem('l1lang', l); }catch(e){}
+  }
+  if(btn){ btn.addEventListener('click', function(e){ e.preventDefault(); setLang(root.getAttribute('lang')==='en'?'ja':'en'); }); }
+  var saved; try{ saved=localStorage.getItem('l1lang'); }catch(e){}
+  setLang(saved==='en'?'en':'ja');
+})();
+</script>
+</body></html>
