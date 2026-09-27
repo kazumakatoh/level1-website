@@ -166,6 +166,7 @@ html.anim .reveal.vis{opacity:1;transform:none}
 .greet-photo{padding:0;overflow:hidden}
 .greet-photo svg{width:100%;height:100%}
 
+.feature-visual.wide{aspect-ratio:16/9}
 .feature-visual.logo{background:#fff;border:1px solid var(--line)}
 .feature-visual.logo img{object-fit:contain;padding:clamp(24px,5vw,56px)}
 
