@@ -33,6 +33,13 @@
     </div>
   </div>
 </section>
+<div class="news mk-wrap"><div class="container">
+  <a class="news-in mk" href="https://yadorigi.store/" target="_blank" rel="noopener" data-href-live="https://www.makuake.com/project/yadorigi/">
+    <span class="news-tag">NEWS</span><time datetime="2026-10-29">2026.10.29</time>
+    <span class="news-txt" data-en="YADORIGI pre-sale launches on Makuake &mdash; Thu, Oct 29, 11:00 JST" data-live="「YADORIGI」Makuakeにて先行販売中（12月30日まで）" data-live-en="YADORIGI pre-sale now live on Makuake (through Dec 30)">「YADORIGI」がMakuakeにて先行販売を開始します（10月29日（木）11:00 公開予定）</span>
+    <span class="news-arr" aria-hidden="true">&rarr;</span>
+  </a>
+</div></div>
 
 
 <section class="sec sec-alt" id="business"><div class="container">
@@ -78,6 +85,7 @@
         <span class="num">Brand 01</span>
         <span class="eyebrow" style="display:block;margin-top:4px" data-en="D2C ・ Domestic Fine Wood">D2C ・ 国産銘木プロダクト</span>
         <h3>YADORIGI</h3>
+        <a class="mk-note mk mk-wrap" href="https://yadorigi.store/" target="_blank" rel="noopener" data-href-live="https://www.makuake.com/project/yadorigi/"><span data-en="Makuake pre-sale opens Thu, Oct 29, 11:00 JST" data-live="Makuakeにて先行販売中（12月30日まで）" data-live-en="Now on Makuake pre-sale (through Dec 30)">Makuakeにて先行販売　10月29日（木）11:00 公開予定</span> <span aria-hidden="true">&rarr;</span></a>
         <p data-en="A product that draws on the trees long native to Japan&#39;s forests. We shape domestic fine woods such as Hokkaido mizunara oak into sticks; placed in a dedicated bottle of whisky, they offer an easy at-home &quot;aging experience.&quot; Over time, the wood lends the drink new character &mdash; a richer moment to savor.">日本の森に昔から宿る木々を活用したプロダクト。北海道ミズナラ、などの国産銘木をスティック状に加工し、専用ボトルにウイスキーを注ぎ込んで、家庭で手軽にできる「熟成体験」を提供するブランドです。木が時間をかけて飲み物に表情を宿す、ゆたかなひとときを提案します。</p>
         <p class="note" data-en="Using properly managed domestic timber helps regenerate Japan&#39;s forests.">適切に手入れされた国産木材を使うことは、日本の森の再生につながります。</p>
       </div>
@@ -253,6 +261,15 @@
   <p class="cp">© 2018–2026 LEVEL1 Inc. All rights reserved.</p>
 </div></footer>
 
+<script>
+(function(){
+  var now=Date.now(), LIVE=Date.parse('2026-10-29T11:00:00+09:00'), END=Date.parse('2026-12-31T00:00:00+09:00');
+  if(now>=END){document.querySelectorAll('.mk-wrap').forEach(function(e){e.remove();});return;}
+  if(now<LIVE)return;
+  document.querySelectorAll('.mk').forEach(function(a){if(a.dataset.hrefLive)a.href=a.dataset.hrefLive;});
+  document.querySelectorAll('[data-live]').forEach(function(e){e.innerHTML=e.dataset.live;if(e.dataset.liveEn)e.setAttribute('data-en',e.dataset.liveEn);});
+})();
+</script>
 <script>
 (function(){
   var t=document.querySelector('.nav-toggle'),n=document.querySelector('.nav');

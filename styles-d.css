@@ -182,3 +182,14 @@ html.anim .reveal.vis{opacity:1;transform:none}
 @media(max-width:560px){.cf-grid{grid-template-columns:1fr}}
 .cf-submit{width:100%;justify-content:center;margin-top:6px}
 .cf-note{font-size:.8rem;color:var(--slate);text-align:center;margin-top:12px;font-weight:400}
+
+/* --- NEWS strip / Makuake notice --- */
+.news{background:var(--bg);border-bottom:1px solid var(--line)}
+.news-in{display:flex;align-items:center;flex-wrap:wrap;gap:8px 14px;padding-block:18px;color:var(--ink)}
+.news-tag{font-family:var(--en);font-weight:800;font-size:.7rem;letter-spacing:.16em;background:var(--blue);color:#fff;padding:4px 10px;border-radius:999px}
+.news time{font-family:var(--en);font-weight:700;font-size:.88rem;color:var(--slate);font-variant-numeric:tabular-nums}
+.news-txt{flex:1;min-width:min(100%,240px);font-weight:700;font-size:.95rem;transition:color .2s}
+.news-arr{color:var(--blue);font-weight:700;transition:transform .2s}
+.news-in:hover .news-txt{color:var(--blue)} .news-in:hover .news-arr{transform:translateX(4px)}
+.mk-note{display:inline-flex;align-items:center;gap:8px;margin:2px 0 16px;padding:10px 16px;border-radius:10px;background:rgba(19,127,236,.08);color:var(--blue);font-weight:700;font-size:.9rem;line-height:1.5}
+.mk-note:hover{background:rgba(19,127,236,.14)}
