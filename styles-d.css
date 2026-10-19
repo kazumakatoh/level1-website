@@ -193,8 +193,8 @@ html.anim .reveal.vis{opacity:1;transform:none}
 .news time{font-family:var(--en);font-weight:700;font-size:.88rem;color:var(--slate);font-variant-numeric:tabular-nums;line-height:1.7}
 .news-cat{font-size:.72rem;font-weight:700;color:var(--blue);border:1px solid currentColor;border-radius:999px;padding:1px 10px;line-height:1.7;margin-top:1px}
 .news-body{flex:1;min-width:min(100%,240px);display:flex;flex-direction:column;gap:4px}
-.news-txt{font-weight:700;font-size:.95rem;line-height:1.7;transition:color .2s}
-.news-sum{color:var(--slate);font-size:.86rem;line-height:1.75}
+.news-txt{font-weight:700;font-size:.95rem;line-height:1.7;transition:color .2s;text-wrap:pretty;word-break:auto-phrase}
+.news-sum{color:var(--slate);font-size:.86rem;line-height:1.75;text-wrap:pretty}
 .news-more{color:var(--blue);font-weight:700;font-size:.86rem}
 .news-arr{color:var(--blue);font-weight:700;line-height:1.7;transition:transform .2s}
 .news-in[href]:hover .news-txt{color:var(--blue)} .news-in[href]:hover .news-arr{transform:translateX(4px)}
